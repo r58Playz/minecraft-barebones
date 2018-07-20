@@ -41,4 +41,4 @@ scoreboard players enable @s b7s.tpback
 execute unless score @s b7s.tpback matches 0 run function b7s:command/tpback
 execute unless score @s b7s.tpback matches 0 run scoreboard players reset @s b7s.tpback
 
-scoreboard players operation @s b7s.val = @s b7s.val
+scoreboard players operation @s b7s.val = @s b7s._val
