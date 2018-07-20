@@ -7,6 +7,7 @@ scoreboard players operation @s b7s._val = @s b7s.val
 execute unless score @s b7s.id matches -2147483648.. run function b7s:tick/_as_player_unless_id_set
 
 execute if score @s b7s._left matches -2147483648.. run function b7s:tick/_as_player_if_left
+scoreboard players reset @s b7s._left
 
 execute if entity @s[nbt={Sleeping:0B}] run scoreboard players reset @s b7s._sleep_time
 execute unless entity @s[nbt={Sleeping:0B}] run scoreboard players add @s b7s._sleep_time 1
